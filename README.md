@@ -34,6 +34,7 @@ Quit the server with CONTROL-C
 ## fastdfs与nginx安装
 pass
 ## 服务器部署
-pass
+pass<br>
+<br>
 最终效果请点击http://www.laizhida.cn
 如果有任何问题，请私信我
