@@ -31,6 +31,9 @@ February 26, 2019 - 14:14:52
 Django version 1.8.2, using settings 'dailyfruit.settings'
 Starting development server at http://127.0.0.1:8085/
 Quit the server with CONTROL-C
-
+## fastdfs与nginx安装
+pass
+## 服务器部署
+pass
 最终效果请点击http://www.laizhida.cn
 如果有任何问题，请私信我
