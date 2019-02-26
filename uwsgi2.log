@@ -1,0 +1,1004 @@
+*** Starting uWSGI 2.0.15 (64bit) on [Sat Nov 25 17:14:32 2017] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.42.1) on 30 October 2017 06:31:19
+os: Darwin-15.6.0 Darwin Kernel Version 15.6.0: Mon Jan  9 23:07:29 PST 2017; root:xnu-3248.60.11.2.1~1/RELEASE_X86_64
+nodename: smartli.local
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /Users/smart/Desktop/dj/bj18/dailyfresh
+writing pidfile to uwsgi2.pid
+detected binary path: /Users/smart/.virtualenvs/dailyfresh/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /Users/smart/Desktop/dj/bj18/dailyfresh
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 10240
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8081 fd 3
+Python version: 3.5.2 (default, Oct 21 2017, 11:45:19)  [GCC 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.42.1)]
+Set PythonHome to /Users/smart/.virtualenvs/dailyfresh
+Python main interpreter initialized at 0x7fa6e20006a0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 415200 bytes (405 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7fa6e20006a0 pid: 8115 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8115)
+spawned uWSGI worker 1 (pid: 8116, cores: 2)
+spawned uWSGI worker 2 (pid: 8117, cores: 2)
+spawned uWSGI worker 3 (pid: 8118, cores: 2)
+spawned uWSGI worker 4 (pid: 8119, cores: 2)
+[pid: 8117|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 819 bytes} [Sat Nov 25 17:19:02 2017] GET /goods/8 => generated 9326 bytes in 479 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 8118|app: 0|req: 1/2] 127.0.0.1 () {42 vars in 819 bytes} [Sat Nov 25 17:19:16 2017] GET /goods/8 => generated 9326 bytes in 375 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 8119|app: 0|req: 1/3] 127.0.0.1 () {48 vars in 919 bytes} [Sat Nov 25 18:27:44 2017] POST /cart/add => generated 67 bytes in 408 msecs (HTTP/1.1 200) 3 headers in 94 bytes (2 switches on core 0)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sun Feb 10 21:44:21 2019] ***
+compiled with version: 5.4.0 20160609 on 07 February 2019 15:01:38
+os: Linux-4.4.0-31-generic #50-Ubuntu SMP Wed Jul 13 00:07:12 UTC 2016
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/python/Desktop/dailyfresh
+writing pidfile to uwsgi2.pid
+detected binary path: /home/python/.virtualenvs/bjll_py3/bin/uwsgi
+chdir() to /Users/smart/Desktop/dj/bj18/dailyfresh
+chdir(): No such file or directory [core/uwsgi.c line 2631]
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sun Feb 10 21:45:43 2019] ***
+compiled with version: 5.4.0 20160609 on 07 February 2019 15:01:38
+os: Linux-4.4.0-31-generic #50-Ubuntu SMP Wed Jul 13 00:07:12 UTC 2016
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/python/Desktop/dailyfresh
+writing pidfile to uwsgi2.pid
+detected binary path: /home/python/.virtualenvs/bjll_py3/bin/uwsgi
+chdir() to /home/python/Desktop/dailyfresh
+your processes number limit is 7775
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8081 fd 3
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/python/.virtualenvs/bjll_py3
+Python main interpreter initialized at 0x106b3c0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x106b3c0 pid: 29760 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 29760)
+spawned uWSGI worker 1 (pid: 29762, cores: 2)
+spawned uWSGI worker 2 (pid: 29763, cores: 2)
+spawned uWSGI worker 3 (pid: 29764, cores: 2)
+spawned uWSGI worker 4 (pid: 29765, cores: 2)
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 394, in urlconf_module
+    return self._urlconf_module
+AttributeError: 'RegexURLResolver' object has no attribute '_urlconf_module'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/middleware/common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 647, in is_valid_path
+    resolve(path, urlconf)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 522, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "./dailyfresh/urls.py", line 25, in <module>
+    url(r'^order/', include('order.urls', namespace='order')), # 订单模块
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/python/Desktop/dailyfresh/apps/order/urls.py", line 2, in <module>
+    from order.views import OrderPlaceView, OrderCommitView, OrderPayView, CheckPayView,CommentView
+  File "/home/python/Desktop/dailyfresh/apps/order/views.py", line 15, in <module>
+    from alipay import AliPay
+ImportError: No module named 'alipay'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 394, in urlconf_module
+    return self._urlconf_module
+AttributeError: 'RegexURLResolver' object has no attribute '_urlconf_module'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/handlers/wsgi.py", line 189, in __call__
+    response = self.get_response(request)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 218, in get_response
+    response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 264, in handle_uncaught_exception
+    if resolver.urlconf_module is None:
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "./dailyfresh/urls.py", line 25, in <module>
+    url(r'^order/', include('order.urls', namespace='order')), # 订单模块
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/python/Desktop/dailyfresh/apps/order/urls.py", line 2, in <module>
+    from order.views import OrderPlaceView, OrderCommitView, OrderPayView, CheckPayView,CommentView
+  File "/home/python/Desktop/dailyfresh/apps/order/views.py", line 15, in <module>
+    from alipay import AliPay
+ImportError: No module named 'alipay'
+[pid: 29763|app: 0|req: 1/1] 127.0.0.1 () {40 vars in 638 bytes} [Sun Feb 10 21:46:10 2019] GET /favicon.ico => generated 0 bytes in 508 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 394, in urlconf_module
+    return self._urlconf_module
+AttributeError: 'RegexURLResolver' object has no attribute '_urlconf_module'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/middleware/common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 647, in is_valid_path
+    resolve(path, urlconf)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 522, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "./dailyfresh/urls.py", line 25, in <module>
+    url(r'^order/', include('order.urls', namespace='order')), # 订单模块
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/python/Desktop/dailyfresh/apps/order/urls.py", line 2, in <module>
+    from order.views import OrderPlaceView, OrderCommitView, OrderPayView, CheckPayView,CommentView
+  File "/home/python/Desktop/dailyfresh/apps/order/views.py", line 15, in <module>
+    from alipay import AliPay
+ImportError: No module named 'alipay'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 394, in urlconf_module
+    return self._urlconf_module
+AttributeError: 'RegexURLResolver' object has no attribute '_urlconf_module'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/handlers/wsgi.py", line 189, in __call__
+    response = self.get_response(request)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 218, in get_response
+    response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 264, in handle_uncaught_exception
+    if resolver.urlconf_module is None:
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "./dailyfresh/urls.py", line 25, in <module>
+    url(r'^order/', include('order.urls', namespace='order')), # 订单模块
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/python/Desktop/dailyfresh/apps/order/urls.py", line 2, in <module>
+    from order.views import OrderPlaceView, OrderCommitView, OrderPayView, CheckPayView,CommentView
+  File "/home/python/Desktop/dailyfresh/apps/order/views.py", line 15, in <module>
+    from alipay import AliPay
+ImportError: No module named 'alipay'
+[pid: 29763|app: 0|req: 2/2] 127.0.0.1 () {40 vars in 638 bytes} [Sun Feb 10 21:46:39 2019] GET /favicon.ico => generated 0 bytes in 25 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 1)
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 394, in urlconf_module
+    return self._urlconf_module
+AttributeError: 'RegexURLResolver' object has no attribute '_urlconf_module'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/middleware/common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 647, in is_valid_path
+    resolve(path, urlconf)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 522, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "./dailyfresh/urls.py", line 25, in <module>
+    url(r'^order/', include('order.urls', namespace='order')), # 订单模块
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/python/Desktop/dailyfresh/apps/order/urls.py", line 2, in <module>
+    from order.views import OrderPlaceView, OrderCommitView, OrderPayView, CheckPayView,CommentView
+  File "/home/python/Desktop/dailyfresh/apps/order/views.py", line 15, in <module>
+    from alipay import AliPay
+ImportError: No module named 'alipay'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 394, in urlconf_module
+    return self._urlconf_module
+AttributeError: 'RegexURLResolver' object has no attribute '_urlconf_module'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/handlers/wsgi.py", line 189, in __call__
+    response = self.get_response(request)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 218, in get_response
+    response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 264, in handle_uncaught_exception
+    if resolver.urlconf_module is None:
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "./dailyfresh/urls.py", line 25, in <module>
+    url(r'^order/', include('order.urls', namespace='order')), # 订单模块
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/python/Desktop/dailyfresh/apps/order/urls.py", line 2, in <module>
+    from order.views import OrderPlaceView, OrderCommitView, OrderPayView, CheckPayView,CommentView
+  File "/home/python/Desktop/dailyfresh/apps/order/views.py", line 15, in <module>
+    from alipay import AliPay
+ImportError: No module named 'alipay'
+[pid: 29762|app: 0|req: 1/3] 127.0.0.1 () {40 vars in 709 bytes} [Sun Feb 10 21:47:06 2019] GET /user/login => generated 0 bytes in 1187 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 394, in urlconf_module
+    return self._urlconf_module
+AttributeError: 'RegexURLResolver' object has no attribute '_urlconf_module'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/middleware/common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 647, in is_valid_path
+    resolve(path, urlconf)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 522, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "./dailyfresh/urls.py", line 25, in <module>
+    url(r'^order/', include('order.urls', namespace='order')), # 订单模块
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/python/Desktop/dailyfresh/apps/order/urls.py", line 2, in <module>
+    from order.views import OrderPlaceView, OrderCommitView, OrderPayView, CheckPayView,CommentView
+  File "/home/python/Desktop/dailyfresh/apps/order/views.py", line 15, in <module>
+    from alipay import AliPay
+ImportError: No module named 'alipay'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 394, in urlconf_module
+    return self._urlconf_module
+AttributeError: 'RegexURLResolver' object has no attribute '_urlconf_module'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/handlers/wsgi.py", line 189, in __call__
+    response = self.get_response(request)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 218, in get_response
+    response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 264, in handle_uncaught_exception
+    if resolver.urlconf_module is None:
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "./dailyfresh/urls.py", line 25, in <module>
+    url(r'^order/', include('order.urls', namespace='order')), # 订单模块
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/python/Desktop/dailyfresh/apps/order/urls.py", line 2, in <module>
+    from order.views import OrderPlaceView, OrderCommitView, OrderPayView, CheckPayView,CommentView
+  File "/home/python/Desktop/dailyfresh/apps/order/views.py", line 15, in <module>
+    from alipay import AliPay
+ImportError: No module named 'alipay'
+[pid: 29762|app: 0|req: 2/4] 127.0.0.1 () {40 vars in 638 bytes} [Sun Feb 10 21:47:12 2019] GET /favicon.ico => generated 0 bytes in 34 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 1)
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 394, in urlconf_module
+    return self._urlconf_module
+AttributeError: 'RegexURLResolver' object has no attribute '_urlconf_module'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/middleware/common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 647, in is_valid_path
+    resolve(path, urlconf)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 522, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 366, in resolve
+    for pattern in self.url_patterns:
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 402, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "./dailyfresh/urls.py", line 25, in <module>
+    url(r'^order/', include('order.urls', namespace='order')), # 订单模块
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/python/Desktop/dailyfresh/apps/order/urls.py", line 2, in <module>
+    from order.views import OrderPlaceView, OrderCommitView, OrderPayView, CheckPayView,CommentView
+  File "/home/python/Desktop/dailyfresh/apps/order/views.py", line 15, in <module>
+    from alipay import AliPay
+ImportError: No module named 'alipay'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 394, in urlconf_module
+    return self._urlconf_module
+AttributeError: 'RegexURLResolver' object has no attribute '_urlconf_module'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/handlers/wsgi.py", line 189, in __call__
+    response = self.get_response(request)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 218, in get_response
+    response = self.handle_uncaught_exception(request, resolver, sys.exc_info())
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 264, in handle_uncaught_exception
+    if resolver.urlconf_module is None:
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/core/urlresolvers.py", line 396, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "./dailyfresh/urls.py", line 25, in <module>
+    url(r'^order/', include('order.urls', namespace='order')), # 订单模块
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/django/conf/urls/__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 673, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 665, in exec_module
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "/home/python/Desktop/dailyfresh/apps/order/urls.py", line 2, in <module>
+    from order.views import OrderPlaceView, OrderCommitView, OrderPayView, CheckPayView,CommentView
+  File "/home/python/Desktop/dailyfresh/apps/order/views.py", line 15, in <module>
+    from alipay import AliPay
+ImportError: No module named 'alipay'
+[pid: 29762|app: 0|req: 3/5] 127.0.0.1 () {40 vars in 638 bytes} [Sun Feb 10 21:48:17 2019] GET /favicon.ico => generated 0 bytes in 29 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Mon Feb 11 16:14:49 2019] ***
+compiled with version: 5.4.0 20160609 on 07 February 2019 15:01:38
+os: Linux-4.4.0-31-generic #50-Ubuntu SMP Wed Jul 13 00:07:12 UTC 2016
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/python/Desktop/dailyfresh
+writing pidfile to uwsgi2.pid
+detected binary path: /home/python/.virtualenvs/bjll_py3/bin/uwsgi
+chdir() to /home/python/Desktop/dailyfresh
+your processes number limit is 7775
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8081 fd 3
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/python/.virtualenvs/bjll_py3
+Python main interpreter initialized at 0x10d73d0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/haystack/utils/__init__.py:12: RemovedInDjango19Warning: django.utils.importlib will be removed in Django 1.9.
+  from django.utils import importlib
+
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x10d73d0 pid: 32661 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 32661)
+spawned uWSGI worker 1 (pid: 32663, cores: 2)
+spawned uWSGI worker 2 (pid: 32664, cores: 2)
+spawned uWSGI worker 3 (pid: 32665, cores: 2)
+spawned uWSGI worker 4 (pid: 32666, cores: 2)
+/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/haystack/backends/whoosh_cn_backend.py:9: RemovedInDjango19Warning: The utilities in django.db.models.loading are deprecated in favor of the new application loading system.
+  from django.db.models.loading import get_model
+
+[pid: 32664|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 753 bytes} [Mon Feb 11 16:15:40 2019] GET /user/register => generated 2615 bytes in 4347 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 32664|app: 0|req: 2/2] 127.0.0.1 () {42 vars in 785 bytes} [Mon Feb 11 21:15:00 2019] GET /user/%7Burl%20goods:index%7D => generated 4242 bytes in 70 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/haystack/backends/whoosh_cn_backend.py:9: RemovedInDjango19Warning: The utilities in django.db.models.loading are deprecated in favor of the new application loading system.
+  from django.db.models.loading import get_model
+
+[pid: 32663|app: 0|req: 1/3] 127.0.0.1 () {44 vars in 779 bytes} [Mon Feb 11 21:16:45 2019] GET /user/register => generated 2629 bytes in 4224 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 32663|app: 0|req: 2/4] 127.0.0.1 () {44 vars in 779 bytes} [Mon Feb 11 21:17:30 2019] GET /user/register => generated 2629 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/haystack/backends/whoosh_cn_backend.py:9: RemovedInDjango19Warning: The utilities in django.db.models.loading are deprecated in favor of the new application loading system.
+  from django.db.models.loading import get_model
+
+[pid: 32665|app: 0|req: 1/5] 127.0.0.1 () {42 vars in 745 bytes} [Mon Feb 11 21:18:16 2019] GET /index => generated 4018 bytes in 2695 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 32665|app: 0|req: 2/6] 127.0.0.1 () {44 vars in 786 bytes} [Mon Feb 11 21:19:46 2019] GET /user/login => generated 174022 bytes in 434 msecs (HTTP/1.1 500) 2 headers in 92 bytes (1 switches on core 1)
+[pid: 32663|app: 0|req: 3/7] 127.0.0.1 () {40 vars in 715 bytes} [Mon Feb 11 21:23:54 2019] GET /user/register => generated 2639 bytes in 26 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 32663|app: 0|req: 4/8] 127.0.0.1 () {42 vars in 755 bytes} [Mon Feb 11 21:24:54 2019] GET /user/login => generated 173485 bytes in 351 msecs (HTTP/1.1 500) 2 headers in 92 bytes (1 switches on core 1)
+[pid: 32663|app: 0|req: 5/9] 127.0.0.1 () {44 vars in 786 bytes} [Mon Feb 11 21:27:12 2019] GET /user/login => generated 2119 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 32663|app: 0|req: 6/10] 127.0.0.1 () {42 vars in 758 bytes} [Mon Feb 11 21:27:46 2019] GET /user/register => generated 2639 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 32665|app: 0|req: 3/11] 127.0.0.1 () {42 vars in 742 bytes} [Mon Feb 11 21:28:35 2019] GET /index => generated 4018 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 32665|app: 0|req: 4/12] 127.0.0.1 () {44 vars in 789 bytes} [Mon Feb 11 21:48:31 2019] GET /user/register => generated 2911 bytes in 28 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 32663|app: 0|req: 7/13] 127.0.0.1 () {50 vars in 934 bytes} [Mon Feb 11 21:48:57 2019] POST /user/register => generated 2953 bytes in 25 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 32663|app: 0|req: 8/14] 127.0.0.1 () {50 vars in 932 bytes} [Mon Feb 11 21:49:54 2019] POST /user/register => generated 2779 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 32663|app: 0|req: 9/15] 127.0.0.1 () {50 vars in 932 bytes} [Mon Feb 11 21:52:15 2019] POST /user/register => generated 2855 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 32663|app: 0|req: 10/16] 127.0.0.1 () {50 vars in 932 bytes} [Mon Feb 11 21:52:32 2019] POST /user/register => generated 2855 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 32663|app: 0|req: 11/17] 127.0.0.1 () {42 vars in 755 bytes} [Mon Feb 11 22:02:17 2019] GET /user/login => generated 2352 bytes in 26 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 32663|app: 0|req: 12/18] 127.0.0.1 () {44 vars in 786 bytes} [Mon Feb 11 22:02:54 2019] GET /user/login => generated 2375 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 32665|app: 0|req: 5/19] 127.0.0.1 () {44 vars in 786 bytes} [Mon Feb 11 22:03:42 2019] GET /user/login => generated 2381 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 32665|app: 0|req: 6/20] 127.0.0.1 () {44 vars in 786 bytes} [Mon Feb 11 22:04:17 2019] GET /user/login => generated 2382 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 32663|app: 0|req: 13/21] 127.0.0.1 () {50 vars in 923 bytes} [Mon Feb 11 22:04:26 2019] POST /user/login => generated 2397 bytes in 10 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/haystack/utils/loading.py:149: RemovedInDjango19Warning: SortedDict is deprecated and will be removed in Django 1.9.
+  self.fields = SortedDict()
+
+/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/haystack/utils/loading.py:186: RemovedInDjango19Warning: SortedDict is deprecated and will be removed in Django 1.9.
+  self.fields = SortedDict()
+
+[pid: 32663|app: 0|req: 14/22] 127.0.0.1 () {50 vars in 934 bytes} [Tue Feb 12 11:15:02 2019] POST /user/register => generated 0 bytes in 8608 msecs (HTTP/1.1 302) 3 headers in 125 bytes (1 switches on core 1)
+[pid: 32663|app: 0|req: 15/23] 127.0.0.1 () {40 vars in 699 bytes} [Tue Feb 12 11:22:22 2019] GET /admin => generated 0 bytes in 1 msecs (HTTP/1.1 301) 3 headers in 138 bytes (1 switches on core 0)
+/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/haystack/backends/whoosh_cn_backend.py:9: RemovedInDjango19Warning: The utilities in django.db.models.loading are deprecated in favor of the new application loading system.
+  from django.db.models.loading import get_model
+
+[pid: 32666|app: 0|req: 1/24] 127.0.0.1 () {40 vars in 738 bytes} [Tue Feb 12 11:22:22 2019] GET /admin/login/?next=/admin/ => generated 1917 bytes in 4962 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
+[pid: 32666|app: 0|req: 2/25] 127.0.0.1 () {50 vars in 969 bytes} [Tue Feb 12 11:22:39 2019] POST /admin/login/?next=/admin/ => generated 2050 bytes in 125 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 1)
+[pid: 32663|app: 0|req: 16/26] 127.0.0.1 () {44 vars in 834 bytes} [Tue Feb 12 11:22:43 2019] GET /admin/ => generated 5244 bytes in 341 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 1)
+[pid: 32663|app: 0|req: 17/27] 127.0.0.1 () {40 vars in 715 bytes} [Tue Feb 12 11:22:50 2019] GET /admin/jsi18n/ => generated 6776 bytes in 415 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 32663|app: 0|req: 18/28] 127.0.0.1 () {40 vars in 708 bytes} [Tue Feb 12 11:22:53 2019] GET /admin/jsi18n/ => generated 6776 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 32665|app: 0|req: 7/29] 127.0.0.1 () {40 vars in 710 bytes} [Tue Feb 12 11:23:12 2019] GET /admin/jsi18n/ => generated 6776 bytes in 133 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[-] Error: 111 connect to 127.0.0.1:22122. Connection refused.
+[-] Error: 111 connect to 127.0.0.1:22122. Connection refused.
+[-] Error: 111 connect to 127.0.0.1:22122. Connection refused.
+[-] Error: 111 connect to 127.0.0.1:22122. Connection refused.
+[-] Error: 111 connect to 127.0.0.1:22122. Connection refused.
+[-] Error: 111 connect to 127.0.0.1:22122. Connection refused.
+[-] Error: 111 connect to 127.0.0.1:22122. Connection refused.
+[-] Error: 111 connect to 127.0.0.1:22122. Connection refused.
+[-] Error: 111 connect to 127.0.0.1:22122. Connection refused.
+[-] Error: 111 connect to 127.0.0.1:22122. Connection refused.
+DAMN ! worker 3 (pid: 32665) died :( trying respawn ...
+Respawned uWSGI worker 3 (new pid: 37349)
+/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/haystack/backends/whoosh_cn_backend.py:9: RemovedInDjango19Warning: The utilities in django.db.models.loading are deprecated in favor of the new application loading system.
+  from django.db.models.loading import get_model
+
+[-] Error: 111 connect to 127.0.0.1:22122. Connection refused.
+[-] Error: 111 connect to 127.0.0.1:22122. Connection refused.
+[-] Error: 111 connect to 127.0.0.1:22122. Connection refused.
+[-] Error: 111 connect to 127.0.0.1:22122. Connection refused.
+[-] Error: 111 connect to 127.0.0.1:22122. Connection refused.
+[-] Error: 111 connect to 127.0.0.1:22122. Connection refused.
+[-] Error: 111 connect to 127.0.0.1:22122. Connection refused.
+[-] Error: 111 connect to 127.0.0.1:22122. Connection refused.
+[-] Error: 111 connect to 127.0.0.1:22122. Connection refused.
+[-] Error: 111 connect to 127.0.0.1:22122. Connection refused.
+DAMN ! worker 3 (pid: 37349) died :( trying respawn ...
+Respawned uWSGI worker 3 (new pid: 37400)
+/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/haystack/backends/whoosh_cn_backend.py:9: RemovedInDjango19Warning: The utilities in django.db.models.loading are deprecated in favor of the new application loading system.
+  from django.db.models.loading import get_model
+
+[pid: 37400|app: 0|req: 10/30] 127.0.0.1 () {42 vars in 741 bytes} [Tue Feb 12 11:37:25 2019] GET /admin/jsi18n/ => generated 6776 bytes in 1742 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 11/31] 127.0.0.1 () {44 vars in 1038 bytes} [Tue Feb 12 11:37:29 2019] GET /admin/goods/goodstype/ => generated 4740 bytes in 471 msecs (HTTP/1.1 200) 8 headers in 420 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 12/32] 127.0.0.1 () {42 vars in 836 bytes} [Tue Feb 12 11:37:36 2019] GET /admin/goods/goodstype/1/ => generated 5814 bytes in 494 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
+getting connection
+<fdfs_client.connection.Connection object at 0x7f0a1a771f98>
+<fdfs_client.fdfs_protol.Tracker_header object at 0x7f0a1a771be0>
+/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/haystack/utils/loading.py:149: RemovedInDjango19Warning: SortedDict is deprecated and will be removed in Django 1.9.
+  self.fields = SortedDict()
+
+/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/haystack/utils/loading.py:186: RemovedInDjango19Warning: SortedDict is deprecated and will be removed in Django 1.9.
+  self.fields = SortedDict()
+
+[pid: 37400|app: 0|req: 13/33] 127.0.0.1 () {50 vars in 1083 bytes} [Tue Feb 12 11:38:03 2019] POST /admin/goods/goodstype/1/ => generated 0 bytes in 469 msecs (HTTP/1.1 302) 8 headers in 481 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 14/34] 127.0.0.1 () {40 vars in 708 bytes} [Tue Feb 12 11:38:04 2019] GET /admin/jsi18n/ => generated 6776 bytes in 46 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 15/35] 127.0.0.1 () {40 vars in 710 bytes} [Tue Feb 12 11:38:45 2019] GET /admin/jsi18n/ => generated 6776 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 16/36] 127.0.0.1 () {44 vars in 1047 bytes} [Tue Feb 12 11:38:58 2019] GET /admin/goods/goodstype/ => generated 4742 bytes in 139 msecs (HTTP/1.1 200) 8 headers in 420 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 17/37] 127.0.0.1 () {42 vars in 836 bytes} [Tue Feb 12 11:39:00 2019] GET /admin/goods/goodstype/1/ => generated 5816 bytes in 87 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 18/38] 127.0.0.1 () {50 vars in 1081 bytes} [Tue Feb 12 11:39:46 2019] POST /admin/goods/goodstype/1/ => generated 0 bytes in 122 msecs (HTTP/1.1 302) 8 headers in 481 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 19/39] 127.0.0.1 () {40 vars in 708 bytes} [Tue Feb 12 11:39:46 2019] GET /admin/jsi18n/ => generated 6776 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 20/40] 127.0.0.1 () {42 vars in 836 bytes} [Tue Feb 12 11:40:40 2019] GET /admin/goods/goodstype/2/ => generated 5815 bytes in 126 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
+getting connection
+<fdfs_client.connection.Connection object at 0x7f0a1a5f3dd8>
+<fdfs_client.fdfs_protol.Tracker_header object at 0x7f0a1a5f35f8>
+[pid: 37400|app: 0|req: 21/41] 127.0.0.1 () {50 vars in 1085 bytes} [Tue Feb 12 11:41:38 2019] POST /admin/goods/goodstype/2/ => generated 0 bytes in 86 msecs (HTTP/1.1 302) 8 headers in 481 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 22/42] 127.0.0.1 () {40 vars in 708 bytes} [Tue Feb 12 11:41:38 2019] GET /admin/jsi18n/ => generated 6776 bytes in 133 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 23/43] 127.0.0.1 () {40 vars in 710 bytes} [Tue Feb 12 11:41:40 2019] GET /admin/jsi18n/ => generated 6776 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 24/44] 127.0.0.1 () {42 vars in 774 bytes} [Tue Feb 12 11:41:53 2019] GET /index => generated 4028 bytes in 57 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+getting connection
+<fdfs_client.connection.Connection object at 0x7f0a1a5f3208>
+<fdfs_client.fdfs_protol.Tracker_header object at 0x7f0a1a5f3780>
+[pid: 37400|app: 0|req: 25/45] 127.0.0.1 () {50 vars in 1085 bytes} [Tue Feb 12 11:41:58 2019] POST /admin/goods/goodstype/1/ => generated 0 bytes in 72 msecs (HTTP/1.1 302) 8 headers in 481 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 26/46] 127.0.0.1 () {40 vars in 708 bytes} [Tue Feb 12 11:41:58 2019] GET /admin/jsi18n/ => generated 6776 bytes in 17 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 27/47] 127.0.0.1 () {42 vars in 836 bytes} [Tue Feb 12 14:13:17 2019] GET /admin/goods/goodstype/2/ => generated 5815 bytes in 291 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 28/48] 127.0.0.1 () {50 vars in 1081 bytes} [Tue Feb 12 14:13:19 2019] POST /admin/goods/goodstype/2/ => generated 0 bytes in 76 msecs (HTTP/1.1 302) 8 headers in 481 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 29/49] 127.0.0.1 () {40 vars in 708 bytes} [Tue Feb 12 14:13:19 2019] GET /admin/jsi18n/ => generated 6776 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 30/50] 127.0.0.1 () {40 vars in 710 bytes} [Tue Feb 12 14:22:00 2019] GET /admin/jsi18n/ => generated 6776 bytes in 42 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 31/51] 127.0.0.1 () {46 vars in 1102 bytes} [Tue Feb 12 14:22:01 2019] GET /admin/goods/goodstype/ => generated 4742 bytes in 136 msecs (HTTP/1.1 200) 8 headers in 420 bytes (1 switches on core 1)
+设置缓存
+[pid: 37400|app: 0|req: 32/52] 127.0.0.1 () {42 vars in 774 bytes} [Tue Feb 12 14:22:04 2019] GET /index => generated 4028 bytes in 61 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 33/53] 127.0.0.1 () {42 vars in 774 bytes} [Tue Feb 12 14:22:07 2019] GET /index => generated 4028 bytes in 57 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 34/54] 127.0.0.1 () {42 vars in 774 bytes} [Tue Feb 12 14:22:08 2019] GET /index => generated 4028 bytes in 64 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 35/55] 127.0.0.1 () {42 vars in 774 bytes} [Tue Feb 12 14:22:10 2019] GET /index => generated 4028 bytes in 41 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 36/56] 127.0.0.1 () {42 vars in 774 bytes} [Tue Feb 12 14:22:11 2019] GET /index => generated 4028 bytes in 29 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 37/57] 127.0.0.1 () {42 vars in 774 bytes} [Tue Feb 12 14:22:13 2019] GET /index => generated 4028 bytes in 32 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 38/58] 127.0.0.1 () {44 vars in 735 bytes} [Tue Feb 12 15:04:23 2019] GET /favicon.ico => generated 3043 bytes in 41 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 39/59] 127.0.0.1 () {44 vars in 735 bytes} [Tue Feb 12 15:04:26 2019] GET /favicon.ico => generated 3043 bytes in 7 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 32663|app: 0|req: 19/60] 127.0.0.1 () {44 vars in 735 bytes} [Tue Feb 12 15:04:28 2019] GET /favicon.ico => generated 3043 bytes in 68 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 40/61] 127.0.0.1 () {44 vars in 735 bytes} [Tue Feb 12 15:04:29 2019] GET /favicon.ico => generated 3043 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 41/62] 127.0.0.1 () {44 vars in 735 bytes} [Tue Feb 12 15:04:30 2019] GET /favicon.ico => generated 3043 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 32663|app: 0|req: 20/63] 127.0.0.1 () {44 vars in 735 bytes} [Tue Feb 12 15:04:32 2019] GET /favicon.ico => generated 3043 bytes in 11 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 42/64] 127.0.0.1 () {44 vars in 735 bytes} [Tue Feb 12 15:04:34 2019] GET /favicon.ico => generated 3043 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 44/65] 127.0.0.1 () {40 vars in 629 bytes} [Tue Feb 12 15:06:18 2019] GET /css/main.css => generated 3046 bytes in 67 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 44/66] 127.0.0.1 () {40 vars in 628 bytes} [Tue Feb 12 15:06:18 2019] GET /js/jquery-ui.min.js => generated 3067 bytes in 58 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 32663|app: 0|req: 21/67] 127.0.0.1 () {40 vars in 620 bytes} [Tue Feb 12 15:06:18 2019] GET /js/slideshow.js => generated 3055 bytes in 11 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 45/68] 127.0.0.1 () {40 vars in 647 bytes} [Tue Feb 12 15:06:19 2019] GET /images/slide.jpg => generated 3058 bytes in 10 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 46/69] 127.0.0.1 () {40 vars in 651 bytes} [Tue Feb 12 15:06:19 2019] GET /images/slide03.jpg => generated 3064 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 32663|app: 0|req: 22/70] 127.0.0.1 () {40 vars in 647 bytes} [Tue Feb 12 15:06:19 2019] GET /images/adv01.jpg => generated 3058 bytes in 10 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 47/71] 127.0.0.1 () {40 vars in 653 bytes} [Tue Feb 12 15:06:19 2019] GET /images/banner01.jpg => generated 3067 bytes in 4 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 48/72] 127.0.0.1 () {40 vars in 665 bytes} [Tue Feb 12 15:06:19 2019] GET /images/goods/goods002.jpg => generated 3085 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 32663|app: 0|req: 23/73] 127.0.0.1 () {40 vars in 665 bytes} [Tue Feb 12 15:06:19 2019] GET /images/goods/goods012.jpg => generated 3085 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 49/74] 127.0.0.1 () {40 vars in 665 bytes} [Tue Feb 12 15:06:19 2019] GET /images/goods/goods018.jpg => generated 3085 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 50/75] 127.0.0.1 () {40 vars in 665 bytes} [Tue Feb 12 15:06:19 2019] GET /images/goods/goods020.jpg => generated 3085 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 32663|app: 0|req: 24/76] 127.0.0.1 () {40 vars in 653 bytes} [Tue Feb 12 15:06:20 2019] GET /images/banner03.jpg => generated 3067 bytes in 14 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 51/77] 127.0.0.1 () {40 vars in 653 bytes} [Tue Feb 12 15:06:20 2019] GET /images/banner04.jpg => generated 3067 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 52/78] 127.0.0.1 () {40 vars in 653 bytes} [Tue Feb 12 15:06:20 2019] GET /images/banner06.jpg => generated 3067 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 32663|app: 0|req: 25/79] 127.0.0.1 () {40 vars in 647 bytes} [Tue Feb 12 15:06:25 2019] GET /images/slide.jpg => generated 3058 bytes in 38 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 53/80] 127.0.0.1 () {40 vars in 651 bytes} [Tue Feb 12 15:06:25 2019] GET /images/slide03.jpg => generated 3064 bytes in 44 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 55/81] 127.0.0.1 () {40 vars in 665 bytes} [Tue Feb 12 15:06:25 2019] GET /images/goods/goods002.jpg => generated 3085 bytes in 20 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 55/82] 127.0.0.1 () {40 vars in 665 bytes} [Tue Feb 12 15:06:25 2019] GET /images/goods/goods012.jpg => generated 3085 bytes in 12 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 32663|app: 0|req: 26/83] 127.0.0.1 () {40 vars in 665 bytes} [Tue Feb 12 15:06:25 2019] GET /images/goods/goods018.jpg => generated 3085 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 32666|app: 0|req: 4/84] 127.0.0.1 () {40 vars in 653 bytes} [Tue Feb 12 15:06:25 2019] GET /images/banner01.jpg => generated 3067 bytes in 128 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 32666|app: 0|req: 4/85] 127.0.0.1 () {40 vars in 647 bytes} [Tue Feb 12 15:06:25 2019] GET /images/adv01.jpg => generated 3058 bytes in 158 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 56/86] 127.0.0.1 () {40 vars in 665 bytes} [Tue Feb 12 15:06:25 2019] GET /images/goods/goods020.jpg => generated 3085 bytes in 20 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 57/87] 127.0.0.1 () {40 vars in 653 bytes} [Tue Feb 12 15:06:25 2019] GET /images/banner03.jpg => generated 3067 bytes in 7 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 32666|app: 0|req: 5/88] 127.0.0.1 () {40 vars in 653 bytes} [Tue Feb 12 15:06:25 2019] GET /images/banner04.jpg => generated 3067 bytes in 10 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 58/89] 127.0.0.1 () {40 vars in 653 bytes} [Tue Feb 12 15:06:25 2019] GET /images/banner06.jpg => generated 3067 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 59/90] 127.0.0.1 () {40 vars in 772 bytes} [Tue Feb 12 15:06:31 2019] GET /admin/login/?next=/admin/goods/goodstype/2/ => generated 1953 bytes in 428 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 60/91] 127.0.0.1 () {44 vars in 888 bytes} [Tue Feb 12 15:06:34 2019] GET /admin/goods/goodstype/2/ => generated 5815 bytes in 215 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 61/92] 127.0.0.1 () {50 vars in 1081 bytes} [Tue Feb 12 15:06:43 2019] POST /admin/goods/goodstype/2/ => generated 0 bytes in 177 msecs (HTTP/1.1 302) 8 headers in 481 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 62/93] 127.0.0.1 () {40 vars in 708 bytes} [Tue Feb 12 15:06:44 2019] GET /admin/jsi18n/ => generated 6776 bytes in 43 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 63/94] 127.0.0.1 () {42 vars in 730 bytes} [Tue Feb 12 15:06:46 2019] GET /css/main.css => generated 3046 bytes in 7 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 32663|app: 0|req: 27/95] 127.0.0.1 () {42 vars in 729 bytes} [Tue Feb 12 15:06:46 2019] GET /js/jquery-ui.min.js => generated 3067 bytes in 16 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 64/96] 127.0.0.1 () {42 vars in 721 bytes} [Tue Feb 12 15:06:46 2019] GET /js/slideshow.js => generated 3055 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 65/97] 127.0.0.1 () {42 vars in 748 bytes} [Tue Feb 12 15:06:46 2019] GET /images/slide.jpg => generated 3058 bytes in 11 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 32663|app: 0|req: 28/98] 127.0.0.1 () {42 vars in 752 bytes} [Tue Feb 12 15:06:46 2019] GET /images/slide03.jpg => generated 3064 bytes in 16 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 67/99] 127.0.0.1 () {42 vars in 748 bytes} [Tue Feb 12 15:06:47 2019] GET /images/adv01.jpg => generated 3058 bytes in 63 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 67/100] 127.0.0.1 () {42 vars in 754 bytes} [Tue Feb 12 15:06:47 2019] GET /images/banner01.jpg => generated 3067 bytes in 55 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 32666|app: 0|req: 6/101] 127.0.0.1 () {42 vars in 766 bytes} [Tue Feb 12 15:06:47 2019] GET /images/goods/goods012.jpg => generated 3085 bytes in 38 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 32663|app: 0|req: 29/102] 127.0.0.1 () {42 vars in 766 bytes} [Tue Feb 12 15:06:47 2019] GET /images/goods/goods002.jpg => generated 3085 bytes in 57 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 68/103] 127.0.0.1 () {42 vars in 766 bytes} [Tue Feb 12 15:06:47 2019] GET /images/goods/goods018.jpg => generated 3085 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 69/104] 127.0.0.1 () {42 vars in 766 bytes} [Tue Feb 12 15:06:47 2019] GET /images/goods/goods020.jpg => generated 3085 bytes in 36 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 70/105] 127.0.0.1 () {42 vars in 754 bytes} [Tue Feb 12 15:06:47 2019] GET /images/banner05.jpg => generated 3067 bytes in 19 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 32666|app: 0|req: 7/106] 127.0.0.1 () {42 vars in 754 bytes} [Tue Feb 12 15:06:47 2019] GET /images/banner06.jpg => generated 3067 bytes in 18 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 71/107] 127.0.0.1 () {42 vars in 752 bytes} [Tue Feb 12 15:06:47 2019] GET /images/slide03.jpg => generated 3064 bytes in 12 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 32664|app: 0|req: 4/108] 127.0.0.1 () {42 vars in 748 bytes} [Tue Feb 12 15:06:47 2019] GET /images/goods.jpg => generated 3058 bytes in 131 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 32664|app: 0|req: 4/109] 127.0.0.1 () {42 vars in 766 bytes} [Tue Feb 12 15:06:47 2019] GET /images/goods/goods021.jpg => generated 3085 bytes in 138 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 72/110] 127.0.0.1 () {42 vars in 730 bytes} [Tue Feb 12 15:06:49 2019] GET /css/main.css => generated 3046 bytes in 13 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 73/111] 127.0.0.1 () {42 vars in 729 bytes} [Tue Feb 12 15:06:49 2019] GET /js/jquery-ui.min.js => generated 3067 bytes in 13 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 32664|app: 0|req: 5/112] 127.0.0.1 () {42 vars in 746 bytes} [Tue Feb 12 15:06:49 2019] GET /images/logo.png => generated 3055 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 74/113] 127.0.0.1 () {42 vars in 748 bytes} [Tue Feb 12 15:06:49 2019] GET /images/slide.jpg => generated 3058 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 75/114] 127.0.0.1 () {42 vars in 752 bytes} [Tue Feb 12 15:06:49 2019] GET /images/slide03.jpg => generated 3064 bytes in 7 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 32663|app: 0|req: 30/115] 127.0.0.1 () {42 vars in 748 bytes} [Tue Feb 12 15:06:49 2019] GET /images/adv01.jpg => generated 3058 bytes in 11 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 76/116] 127.0.0.1 () {42 vars in 754 bytes} [Tue Feb 12 15:06:49 2019] GET /images/banner01.jpg => generated 3067 bytes in 5 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 32663|app: 0|req: 31/117] 127.0.0.1 () {42 vars in 766 bytes} [Tue Feb 12 15:06:49 2019] GET /images/goods/goods002.jpg => generated 3085 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 77/118] 127.0.0.1 () {42 vars in 766 bytes} [Tue Feb 12 15:06:49 2019] GET /images/goods/goods012.jpg => generated 3085 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 78/119] 127.0.0.1 () {42 vars in 766 bytes} [Tue Feb 12 15:06:49 2019] GET /images/goods/goods018.jpg => generated 3085 bytes in 10 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 32663|app: 0|req: 33/121] 127.0.0.1 () {42 vars in 766 bytes} [Tue Feb 12 15:06:49 2019] GET /images/goods/goods020.jpg => generated 3085 bytes in 49 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 79/121] 127.0.0.1 () {42 vars in 754 bytes} [Tue Feb 12 15:06:49 2019] GET /images/banner03.jpg => generated 3067 bytes in 36 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 32663|app: 0|req: 33/122] 127.0.0.1 () {42 vars in 754 bytes} [Tue Feb 12 15:06:49 2019] GET /images/banner04.jpg => generated 3067 bytes in 40 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 80/123] 127.0.0.1 () {42 vars in 754 bytes} [Tue Feb 12 15:06:49 2019] GET /images/banner05.jpg => generated 3067 bytes in 36 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 32663|app: 0|req: 34/124] 127.0.0.1 () {42 vars in 748 bytes} [Tue Feb 12 15:06:49 2019] GET /images/slide.jpg => generated 3058 bytes in 17 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 32664|app: 0|req: 6/125] 127.0.0.1 () {42 vars in 752 bytes} [Tue Feb 12 15:06:49 2019] GET /images/slide03.jpg => generated 3064 bytes in 16 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 81/126] 127.0.0.1 () {42 vars in 748 bytes} [Tue Feb 12 15:06:49 2019] GET /images/adv01.jpg => generated 3058 bytes in 14 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 82/127] 127.0.0.1 () {42 vars in 754 bytes} [Tue Feb 12 15:06:49 2019] GET /images/banner01.jpg => generated 3067 bytes in 26 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 32664|app: 0|req: 7/128] 127.0.0.1 () {42 vars in 766 bytes} [Tue Feb 12 15:06:49 2019] GET /images/goods/goods002.jpg => generated 3085 bytes in 14 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 83/129] 127.0.0.1 () {42 vars in 766 bytes} [Tue Feb 12 15:06:49 2019] GET /images/goods/goods012.jpg => generated 3085 bytes in 6 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 84/130] 127.0.0.1 () {40 vars in 745 bytes} [Tue Feb 12 15:16:24 2019] GET /admin/ => generated 7559 bytes in 387 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 85/131] 127.0.0.1 () {40 vars in 708 bytes} [Tue Feb 12 15:16:28 2019] GET /admin/jsi18n/ => generated 6776 bytes in 20 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 86/132] 127.0.0.1 () {40 vars in 710 bytes} [Tue Feb 12 15:16:30 2019] GET /admin/jsi18n/ => generated 6776 bytes in 18 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 87/133] 127.0.0.1 () {44 vars in 1047 bytes} [Tue Feb 12 15:16:32 2019] GET /admin/goods/goodstype/ => generated 4742 bytes in 136 msecs (HTTP/1.1 200) 8 headers in 420 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 88/134] 127.0.0.1 () {42 vars in 840 bytes} [Tue Feb 12 15:17:02 2019] GET /admin/goods/goodstype/add/ => generated 5422 bytes in 110 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
+getting connection
+<fdfs_client.connection.Connection object at 0x7f0a201835c0>
+<fdfs_client.fdfs_protol.Tracker_header object at 0x7f0a20163b00>
+[pid: 37400|app: 0|req: 89/135] 127.0.0.1 () {50 vars in 1091 bytes} [Tue Feb 12 15:19:53 2019] POST /admin/goods/goodstype/add/ => generated 0 bytes in 298 msecs (HTTP/1.1 302) 8 headers in 488 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 90/136] 127.0.0.1 () {40 vars in 708 bytes} [Tue Feb 12 15:19:54 2019] GET /admin/jsi18n/ => generated 6776 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 91/137] 127.0.0.1 () {40 vars in 712 bytes} [Tue Feb 12 15:20:08 2019] GET /admin/jsi18n/ => generated 6776 bytes in 402 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 92/138] 127.0.0.1 () {44 vars in 1056 bytes} [Tue Feb 12 15:20:39 2019] GET /admin/goods/goodstype/ => generated 5183 bytes in 151 msecs (HTTP/1.1 200) 8 headers in 420 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 93/139] 127.0.0.1 () {42 vars in 840 bytes} [Tue Feb 12 15:20:44 2019] GET /admin/goods/goodstype/add/ => generated 5422 bytes in 125 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 1)
+getting connection
+<fdfs_client.connection.Connection object at 0x7f0a1a5fb780>
+<fdfs_client.fdfs_protol.Tracker_header object at 0x7f0a1a5fb358>
+[pid: 37400|app: 0|req: 94/140] 127.0.0.1 () {50 vars in 1091 bytes} [Tue Feb 12 15:21:50 2019] POST /admin/goods/goodstype/add/ => generated 0 bytes in 73 msecs (HTTP/1.1 302) 8 headers in 488 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 95/141] 127.0.0.1 () {40 vars in 708 bytes} [Tue Feb 12 15:21:50 2019] GET /admin/jsi18n/ => generated 6776 bytes in 124 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 96/142] 127.0.0.1 () {42 vars in 836 bytes} [Tue Feb 12 15:22:10 2019] GET /admin/goods/indexgoodsbanner/ => generated 3242 bytes in 133 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 97/143] 127.0.0.1 () {42 vars in 861 bytes} [Tue Feb 12 15:22:12 2019] GET /admin/goods/indexgoodsbanner/add/ => generated 5656 bytes in 113 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 98/144] 127.0.0.1 () {44 vars in 878 bytes} [Tue Feb 12 15:22:22 2019] GET /admin/goods/ => generated 3825 bytes in 64 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 99/145] 127.0.0.1 () {40 vars in 719 bytes} [Tue Feb 12 15:22:38 2019] GET /admin/jsi18n/ => generated 6776 bytes in 13 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 100/146] 127.0.0.1 () {40 vars in 719 bytes} [Tue Feb 12 15:22:53 2019] GET /admin/jsi18n/ => generated 6776 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 101/147] 127.0.0.1 () {46 vars in 909 bytes} [Tue Feb 12 15:59:39 2019] GET /admin/goods/ => generated 3825 bytes in 113 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 102/148] 127.0.0.1 () {46 vars in 909 bytes} [Tue Feb 12 15:59:42 2019] GET /admin/goods/ => generated 3825 bytes in 75 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 103/149] 127.0.0.1 () {46 vars in 909 bytes} [Tue Feb 12 15:59:43 2019] GET /admin/goods/ => generated 3825 bytes in 63 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 104/150] 127.0.0.1 () {46 vars in 909 bytes} [Tue Feb 12 15:59:44 2019] GET /admin/goods/ => generated 3825 bytes in 56 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 105/151] 127.0.0.1 () {46 vars in 909 bytes} [Tue Feb 12 15:59:44 2019] GET /admin/goods/ => generated 3825 bytes in 71 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 106/152] 127.0.0.1 () {44 vars in 845 bytes} [Tue Feb 12 16:01:19 2019] GET /admin/ => generated 7563 bytes in 113 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 107/153] 127.0.0.1 () {46 vars in 876 bytes} [Tue Feb 12 16:01:24 2019] GET /admin/ => generated 7563 bytes in 67 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 108/154] 127.0.0.1 () {46 vars in 876 bytes} [Tue Feb 12 16:01:24 2019] GET /admin/ => generated 7563 bytes in 68 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 109/155] 127.0.0.1 () {46 vars in 876 bytes} [Tue Feb 12 16:01:25 2019] GET /admin/ => generated 7563 bytes in 76 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 110/156] 127.0.0.1 () {40 vars in 708 bytes} [Tue Feb 12 16:01:28 2019] GET /admin/jsi18n/ => generated 6776 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 111/157] 127.0.0.1 () {40 vars in 710 bytes} [Tue Feb 12 16:01:32 2019] GET /admin/jsi18n/ => generated 6776 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 112/158] 127.0.0.1 () {44 vars in 877 bytes} [Tue Feb 12 16:01:36 2019] GET /admin/goods/goodstype/ => generated 5260 bytes in 148 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 113/159] 127.0.0.1 () {40 vars in 708 bytes} [Tue Feb 12 16:01:36 2019] GET /admin/jsi18n/ => generated 6776 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 114/160] 127.0.0.1 () {40 vars in 715 bytes} [Tue Feb 12 16:01:38 2019] GET /admin/jsi18n/ => generated 6776 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 115/161] 127.0.0.1 () {40 vars in 719 bytes} [Tue Feb 12 16:01:40 2019] GET /admin/jsi18n/ => generated 6776 bytes in 17 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 116/162] 127.0.0.1 () {44 vars in 845 bytes} [Tue Feb 12 16:01:43 2019] GET /admin/ => generated 7563 bytes in 84 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 117/163] 127.0.0.1 () {44 vars in 798 bytes} [Tue Feb 12 16:02:04 2019] GET /admin/ => generated 7563 bytes in 105 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 118/164] 127.0.0.1 () {44 vars in 798 bytes} [Tue Feb 12 16:02:05 2019] GET /admin/ => generated 7563 bytes in 100 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 119/165] 127.0.0.1 () {44 vars in 798 bytes} [Tue Feb 12 16:02:05 2019] GET /admin/ => generated 7563 bytes in 64 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 120/166] 127.0.0.1 () {44 vars in 798 bytes} [Tue Feb 12 16:02:06 2019] GET /admin/ => generated 7563 bytes in 67 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 121/167] 127.0.0.1 () {44 vars in 798 bytes} [Tue Feb 12 16:02:06 2019] GET /admin/ => generated 7563 bytes in 111 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 122/168] 127.0.0.1 () {44 vars in 798 bytes} [Tue Feb 12 16:02:06 2019] GET /admin/ => generated 7563 bytes in 70 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 123/169] 127.0.0.1 () {44 vars in 798 bytes} [Tue Feb 12 16:02:06 2019] GET /admin/ => generated 7563 bytes in 67 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 124/170] 127.0.0.1 () {44 vars in 798 bytes} [Tue Feb 12 16:02:07 2019] GET /admin/ => generated 7563 bytes in 86 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 37400|app: 0|req: 125/171] 127.0.0.1 () {44 vars in 798 bytes} [Tue Feb 12 16:02:07 2019] GET /admin/ => generated 7563 bytes in 74 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 1)
+[pid: 37400|app: 0|req: 126/172] 127.0.0.1 () {44 vars in 741 bytes} [Tue Feb 12 16:02:11 2019] GET /favicon.ico => generated 3043 bytes in 13 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 2 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Feb 13 17:32:55 2019] ***
+compiled with version: 5.4.0 20160609 on 07 February 2019 15:01:38
+os: Linux-4.4.0-31-generic #50-Ubuntu SMP Wed Jul 13 00:07:12 UTC 2016
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/python/Desktop/dailyfresh
+writing pidfile to uwsgi2.pid
+detected binary path: /home/python/.virtualenvs/bjll_py3/bin/uwsgi
+chdir() to /home/python/Desktop/dailyfresh
+your processes number limit is 7775
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8081 fd 3
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/python/.virtualenvs/bjll_py3
+Python main interpreter initialized at 0xc63420
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/haystack/utils/__init__.py:12: RemovedInDjango19Warning: django.utils.importlib will be removed in Django 1.9.
+  from django.utils import importlib
+
+WSGI app 0 (mountpoint='') ready in 3 seconds on interpreter 0xc63420 pid: 45848 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 45848)
+spawned uWSGI worker 1 (pid: 45857, cores: 2)
+spawned uWSGI worker 2 (pid: 45858, cores: 2)
+spawned uWSGI worker 3 (pid: 45860, cores: 2)
+spawned uWSGI worker 4 (pid: 45868, cores: 2)
+/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/haystack/backends/whoosh_cn_backend.py:9: RemovedInDjango19Warning: The utilities in django.db.models.loading are deprecated in favor of the new application loading system.
+  from django.db.models.loading import get_model
+
+设置缓存
+[pid: 45860|app: 0|req: 1/1] 127.0.0.1 () {40 vars in 743 bytes} [Wed Feb 13 17:33:13 2019] GET /index => generated 7708 bytes in 6725 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 45860|app: 0|req: 2/2] 127.0.0.1 () {42 vars in 785 bytes} [Wed Feb 13 17:33:23 2019] GET /goods/1 => generated 9032 bytes in 90 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/haystack/backends/whoosh_cn_backend.py:9: RemovedInDjango19Warning: The utilities in django.db.models.loading are deprecated in favor of the new application loading system.
+  from django.db.models.loading import get_model
+
+[pid: 45868|app: 0|req: 1/3] 127.0.0.1 () {44 vars in 816 bytes} [Wed Feb 13 17:39:19 2019] GET /goods/1 => generated 9032 bytes in 1717 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 45868|app: 0|req: 2/4] 127.0.0.1 () {40 vars in 743 bytes} [Wed Feb 13 17:39:43 2019] GET /index => generated 7703 bytes in 142 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 45868|app: 0|req: 3/5] 127.0.0.1 () {44 vars in 885 bytes} [Wed Feb 13 17:39:53 2019] GET /admin/goods/indexgoodsbanner/ => generated 4929 bytes in 247 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
+[pid: 45868|app: 0|req: 4/6] 127.0.0.1 () {42 vars in 857 bytes} [Wed Feb 13 17:39:55 2019] GET /admin/goods/indexgoodsbanner/1/ => generated 6798 bytes in 172 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 1)
+/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/haystack/utils/loading.py:149: RemovedInDjango19Warning: SortedDict is deprecated and will be removed in Django 1.9.
+  self.fields = SortedDict()
+
+/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/haystack/utils/loading.py:186: RemovedInDjango19Warning: SortedDict is deprecated and will be removed in Django 1.9.
+  self.fields = SortedDict()
+
+[pid: 45868|app: 0|req: 5/7] 127.0.0.1 () {50 vars in 1102 bytes} [Wed Feb 13 17:39:57 2019] POST /admin/goods/indexgoodsbanner/1/ => generated 0 bytes in 798 msecs (HTTP/1.1 302) 8 headers in 530 bytes (1 switches on core 0)
+[pid: 45868|app: 0|req: 6/8] 127.0.0.1 () {40 vars in 715 bytes} [Wed Feb 13 17:39:58 2019] GET /admin/jsi18n/ => generated 6776 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 45868|app: 0|req: 7/9] 127.0.0.1 () {42 vars in 780 bytes} [Wed Feb 13 17:40:16 2019] GET /goods/1 => generated 9032 bytes in 53 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 45868|app: 0|req: 8/10] 127.0.0.1 () {42 vars in 830 bytes} [Wed Feb 13 18:14:08 2019] GET /admin/goods/indexgoodsbanner/ => generated 4929 bytes in 157 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 1)
+[pid: 45868|app: 0|req: 9/11] 127.0.0.1 () {42 vars in 820 bytes} [Wed Feb 13 18:14:11 2019] GET /admin/goods/goodssku/ => generated 4578 bytes in 88 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
+[pid: 45868|app: 0|req: 10/12] 127.0.0.1 () {42 vars in 833 bytes} [Wed Feb 13 18:14:12 2019] GET /admin/goods/goodssku/2/ => generated 11148 bytes in 171 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 1)
+[pid: 45868|app: 0|req: 11/13] 127.0.0.1 () {42 vars in 872 bytes} [Wed Feb 13 18:16:38 2019] GET /admin/goods/goods/2/?_to_field=id&_popup=1 => generated 6806 bytes in 117 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
+[pid: 45868|app: 0|req: 12/14] 127.0.0.1 () {44 vars in 868 bytes} [Wed Feb 13 21:03:48 2019] GET /admin/goods/ => generated 5045 bytes in 146 msecs (HTTP/1.1 200) 6 headers in 214 bytes (1 switches on core 1)
+[pid: 45868|app: 0|req: 13/15] 127.0.0.1 () {40 vars in 704 bytes} [Wed Feb 13 21:03:50 2019] GET /admin/jsi18n/ => generated 6776 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 45868|app: 0|req: 14/16] 127.0.0.1 () {40 vars in 706 bytes} [Wed Feb 13 21:03:51 2019] GET /admin/jsi18n/ => generated 6776 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 45868|app: 0|req: 15/17] 127.0.0.1 () {42 vars in 737 bytes} [Wed Feb 13 21:12:34 2019] GET /admin/jsi18n/ => generated 6776 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 45868|app: 0|req: 16/18] 127.0.0.1 () {42 vars in 805 bytes} [Wed Feb 13 21:22:10 2019] GET /goods/index.html => generated 3058 bytes in 33 msecs (HTTP/1.1 404) 2 headers in 80 bytes (1 switches on core 1)
+[pid: 45868|app: 0|req: 17/19] 127.0.0.1 () {42 vars in 780 bytes} [Wed Feb 13 21:22:58 2019] GET /goods/2 => generated 9202 bytes in 101 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 45868|app: 0|req: 18/20] 127.0.0.1 () {40 vars in 704 bytes} [Wed Feb 13 21:31:04 2019] GET /admin/jsi18n/ => generated 6776 bytes in 22 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 45868|app: 0|req: 19/21] 127.0.0.1 () {40 vars in 706 bytes} [Wed Feb 13 21:31:06 2019] GET /admin/jsi18n/ => generated 6776 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 45868|app: 0|req: 20/22] 127.0.0.1 () {42 vars in 737 bytes} [Wed Feb 13 21:31:09 2019] GET /admin/jsi18n/ => generated 6776 bytes in 19 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 45868|app: 0|req: 21/23] 127.0.0.1 () {42 vars in 737 bytes} [Wed Feb 13 21:31:11 2019] GET /admin/jsi18n/ => generated 6776 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 45868|app: 0|req: 22/24] 127.0.0.1 () {42 vars in 737 bytes} [Wed Feb 13 21:31:13 2019] GET /admin/jsi18n/ => generated 6776 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 45868|app: 0|req: 23/25] 127.0.0.1 () {40 vars in 706 bytes} [Wed Feb 13 21:31:16 2019] GET /admin/jsi18n/ => generated 6776 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 45868|app: 0|req: 24/26] 127.0.0.1 () {42 vars in 737 bytes} [Wed Feb 13 21:35:04 2019] GET /admin/jsi18n/ => generated 6776 bytes in 24 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 3.608 seconds.
+Prefix dict has been built succesfully.
+/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/haystack/models.py:98: RemovedInDjango19Warning: django.db.models.get_model is deprecated.
+  self._model = models.get_model(self.app_label, self.model_name)
+
+[pid: 45868|app: 0|req: 25/27] 127.0.0.1 () {42 vars in 846 bytes} [Wed Feb 13 21:44:20 2019] GET /search?q=%E5%A5%BD%E5%90%83 => generated 3917 bytes in 3830 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 44 seconds
+worker 2 buried after 44 seconds
+worker 3 buried after 59 seconds
+Fri Feb 15 21:25:55 2019 - worker 4 (pid: 45868) is taking too much time to die...NO MERCY !!!
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sat Feb 16 11:02:43 2019] ***
+compiled with version: 5.4.0 20160609 on 07 February 2019 15:01:38
+os: Linux-4.4.0-31-generic #50-Ubuntu SMP Wed Jul 13 00:07:12 UTC 2016
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/python/Desktop/dailyfresh
+writing pidfile to uwsgi2.pid
+detected binary path: /home/python/.virtualenvs/bjll_py3/bin/uwsgi
+chdir() to /home/python/Desktop/dailyfresh
+your processes number limit is 7775
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8081 fd 3
+Python version: 3.5.2 (default, Nov 12 2018, 13:43:14)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/python/.virtualenvs/bjll_py3
+Python main interpreter initialized at 0xf1c3c0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/haystack/utils/__init__.py:12: RemovedInDjango19Warning: django.utils.importlib will be removed in Django 1.9.
+  from django.utils import importlib
+
+WSGI app 0 (mountpoint='') ready in 5 seconds on interpreter 0xf1c3c0 pid: 95564 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 95564)
+spawned uWSGI worker 1 (pid: 95577, cores: 2)
+spawned uWSGI worker 2 (pid: 95578, cores: 2)
+spawned uWSGI worker 3 (pid: 95580, cores: 2)
+spawned uWSGI worker 4 (pid: 95585, cores: 2)
+/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/haystack/backends/whoosh_cn_backend.py:9: RemovedInDjango19Warning: The utilities in django.db.models.loading are deprecated in favor of the new application loading system.
+  from django.db.models.loading import get_model
+
+[pid: 95578|app: 0|req: 1/1] 127.0.0.1 () {42 vars in 780 bytes} [Sat Feb 16 11:04:11 2019] GET /goods/2 => generated 10441 bytes in 2267 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/haystack/backends/whoosh_cn_backend.py:9: RemovedInDjango19Warning: The utilities in django.db.models.loading are deprecated in favor of the new application loading system.
+  from django.db.models.loading import get_model
+
+/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/haystack/utils/loading.py:149: RemovedInDjango19Warning: SortedDict is deprecated and will be removed in Django 1.9.
+  self.fields = SortedDict()
+
+/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/haystack/utils/loading.py:186: RemovedInDjango19Warning: SortedDict is deprecated and will be removed in Django 1.9.
+  self.fields = SortedDict()
+
+[pid: 95577|app: 0|req: 1/2] 127.0.0.1 () {50 vars in 967 bytes} [Sat Feb 16 11:04:26 2019] POST /user/login => generated 0 bytes in 1665 msecs (HTTP/1.1 302) 7 headers in 476 bytes (1 switches on core 0)
+[pid: 95577|app: 0|req: 2/3] 127.0.0.1 () {40 vars in 791 bytes} [Sun Feb 17 15:07:50 2019] GET /admin/goods/indexgoodsbanner/ => generated 4929 bytes in 10209 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 1)
+/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/haystack/backends/whoosh_cn_backend.py:9: RemovedInDjango19Warning: The utilities in django.db.models.loading are deprecated in favor of the new application loading system.
+  from django.db.models.loading import get_model
+
+/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/haystack/backends/whoosh_cn_backend.py:9: RemovedInDjango19Warning: The utilities in django.db.models.loading are deprecated in favor of the new application loading system.
+  from django.db.models.loading import get_model
+
+[pid: 95577|app: 0|req: 3/4] 127.0.0.1 () {42 vars in 748 bytes} [Sun Feb 17 15:08:33 2019] GET /admin/jsi18n/ => generated 6776 bytes in 531 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 95580|app: 0|req: 1/5] 127.0.0.1 () {40 vars in 717 bytes} [Sun Feb 17 15:08:19 2019] GET /admin/jsi18n/ => generated 6776 bytes in 20304 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 95585|app: 0|req: 1/6] 127.0.0.1 () {42 vars in 857 bytes} [Sun Feb 17 15:08:09 2019] GET /admin/goods/indexgoodsbanner/3/ => generated 6976 bytes in 31921 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 1)
+[pid: 95577|app: 0|req: 4/7] 127.0.0.1 () {44 vars in 1103 bytes} [Sun Feb 17 15:09:11 2019] GET /admin/goods/indexgoodsbanner/ => generated 5083 bytes in 600 msecs (HTTP/1.1 200) 8 headers in 420 bytes (1 switches on core 1)
+[pid: 95577|app: 0|req: 5/8] 127.0.0.1 () {42 vars in 857 bytes} [Sun Feb 17 15:11:11 2019] GET /admin/goods/indexgoodsbanner/3/ => generated 6976 bytes in 1007 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 0)
+getting connection
+<fdfs_client.connection.Connection object at 0x7f7855ad0ef0>
+<fdfs_client.fdfs_protol.Tracker_header object at 0x7f7855ad0780>
+[pid: 95577|app: 0|req: 6/9] 127.0.0.1 () {50 vars in 1108 bytes} [Sun Feb 17 15:11:21 2019] POST /admin/goods/indexgoodsbanner/3/ => generated 0 bytes in 865 msecs (HTTP/1.1 302) 8 headers in 523 bytes (1 switches on core 1)
+[pid: 95577|app: 0|req: 7/10] 127.0.0.1 () {40 vars in 715 bytes} [Sun Feb 17 15:11:22 2019] GET /admin/jsi18n/ => generated 6776 bytes in 112 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 95577|app: 0|req: 8/11] 127.0.0.1 () {42 vars in 857 bytes} [Sun Feb 17 15:14:50 2019] GET /admin/goods/indexgoodsbanner/3/ => generated 6976 bytes in 153 msecs (HTTP/1.1 200) 7 headers in 336 bytes (1 switches on core 1)
+getting connection
+<fdfs_client.connection.Connection object at 0x7f7855946cc0>
+<fdfs_client.fdfs_protol.Tracker_header object at 0x7f78559467f0>
+[pid: 95577|app: 0|req: 9/12] 127.0.0.1 () {50 vars in 1108 bytes} [Sun Feb 17 15:14:57 2019] POST /admin/goods/indexgoodsbanner/3/ => generated 0 bytes in 269 msecs (HTTP/1.1 302) 8 headers in 523 bytes (1 switches on core 0)
+[pid: 95577|app: 0|req: 10/13] 127.0.0.1 () {40 vars in 715 bytes} [Sun Feb 17 15:14:57 2019] GET /admin/jsi18n/ => generated 6776 bytes in 117 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 1)
+[pid: 95577|app: 0|req: 11/14] 127.0.0.1 () {40 vars in 717 bytes} [Sun Feb 17 15:16:52 2019] GET /admin/jsi18n/ => generated 6776 bytes in 30 msecs (HTTP/1.1 200) 3 headers in 93 bytes (1 switches on core 0)
+[pid: 95577|app: 0|req: 12/15] 127.0.0.1 () {46 vars in 1158 bytes} [Sun Feb 17 15:16:57 2019] GET /admin/goods/indexgoodsbanner/ => generated 5083 bytes in 344 msecs (HTTP/1.1 200) 8 headers in 420 bytes (1 switches on core 1)
+[pid: 95577|app: 0|req: 13/16] 127.0.0.1 () {42 vars in 786 bytes} [Sun Feb 17 15:22:46 2019] GET /user/login => generated 2191 bytes in 46 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 0)
+[pid: 95577|app: 0|req: 14/17] 127.0.0.1 () {50 vars in 967 bytes} [Sun Feb 17 15:22:51 2019] POST /user/login => generated 0 bytes in 313 msecs (HTTP/1.1 302) 7 headers in 476 bytes (1 switches on core 1)
+[pid: 95577|app: 0|req: 15/18] 127.0.0.1 () {42 vars in 781 bytes} [Sun Feb 17 15:22:55 2019] GET /user/ => generated 5743 bytes in 311 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+１３４６６６６７７７７
+[pid: 95577|app: 0|req: 16/19] 127.0.0.1 () {50 vars in 975 bytes} [Sun Feb 17 15:23:38 2019] POST /user/address => generated 3600 bytes in 212 msecs (HTTP/1.1 200) 4 headers in 224 bytes (1 switches on core 1)
+[pid: 95577|app: 0|req: 17/20] 127.0.0.1 () {42 vars in 781 bytes} [Sun Feb 17 15:23:45 2019] GET /user/ => generated 5743 bytes in 142 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 95577|app: 0|req: 18/21] 127.0.0.1 () {44 vars in 812 bytes} [Mon Feb 18 22:01:18 2019] GET /index => generated 8644 bytes in 327 msecs (HTTP/1.1 200) 3 headers in 102 bytes (1 switches on core 1)

@@ -1,0 +1,124 @@
+[2019-02-26 13:41:56,818: WARNING/MainProcess] /home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/celery/fixups/django.py:200: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
+[2019-02-26 13:42:39,747: ERROR/MainProcess] Error on stopping Pool: TypeError("can't pickle _thread.lock objects",)
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/celery/worker/worker.py", line 205, in start
+    self.blueprint.start(self)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/celery/bootsteps.py", line 369, in start
+    return self.obj.start()
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/celery/worker/consumer/consumer.py", line 317, in start
+    blueprint.start(self)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/celery/worker/consumer/consumer.py", line 593, in start
+    c.loop(*c.loop_args())
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/celery/worker/loops.py", line 91, in asynloop
+    next(loop)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/kombu/asynchronous/hub.py", line 298, in create_loop
+    events = poll(poll_timeout)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/kombu/utils/eventio.py", line 84, in poll
+    return self._epoll.poll(timeout if timeout is not None else -1)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/celery/apps/worker.py", line 284, in _handle_request
+    raise exc(exitcode)
+celery.exceptions.WorkerShutdown: 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/celery/bootsteps.py", line 151, in send_all
+    fun(parent, *args)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/celery/bootsteps.py", line 373, in stop
+    return self.obj.stop()
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/celery/concurrency/base.py", line 122, in stop
+    self.on_stop()
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/celery/concurrency/prefork.py", line 140, in on_stop
+    self._pool.join()
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/billiard/pool.py", line 1578, in join
+    stop_if_not_current(self._result_handler)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/billiard/pool.py", line 143, in stop_if_not_current
+    thread.stop(timeout)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/billiard/pool.py", line 500, in stop
+    self.on_stop_not_started()
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/celery/concurrency/asynpool.py", line 332, in on_stop_not_started
+    check_timeouts()
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/billiard/pool.py", line 744, in handle_event
+    next(self._it)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/billiard/pool.py", line 697, in handle_timeouts
+    cache = copy.deepcopy(self.cache)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 155, in deepcopy
+    y = copier(x, memo)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 243, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 182, in deepcopy
+    y = _reconstruct(x, rv, 1, memo)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 297, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 155, in deepcopy
+    y = copier(x, memo)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 243, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 155, in deepcopy
+    y = copier(x, memo)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 250, in _deepcopy_method
+    return type(x)(x.__func__, deepcopy(x.__self__, memo))
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 182, in deepcopy
+    y = _reconstruct(x, rv, 1, memo)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 297, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 155, in deepcopy
+    y = copier(x, memo)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 223, in _deepcopy_tuple
+    y = [deepcopy(a, memo) for a in x]
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 223, in <listcomp>
+    y = [deepcopy(a, memo) for a in x]
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 155, in deepcopy
+    y = copier(x, memo)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 243, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 182, in deepcopy
+    y = _reconstruct(x, rv, 1, memo)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 297, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 155, in deepcopy
+    y = copier(x, memo)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 223, in _deepcopy_tuple
+    y = [deepcopy(a, memo) for a in x]
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 223, in <listcomp>
+    y = [deepcopy(a, memo) for a in x]
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 155, in deepcopy
+    y = copier(x, memo)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 243, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 182, in deepcopy
+    y = _reconstruct(x, rv, 1, memo)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 297, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 155, in deepcopy
+    y = copier(x, memo)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 243, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 182, in deepcopy
+    y = _reconstruct(x, rv, 1, memo)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 297, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 155, in deepcopy
+    y = copier(x, memo)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 243, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 182, in deepcopy
+    y = _reconstruct(x, rv, 1, memo)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 297, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 155, in deepcopy
+    y = copier(x, memo)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 243, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/python/.virtualenvs/bjll_py3/lib/python3.5/copy.py", line 174, in deepcopy
+    rv = reductor(4)
+TypeError: can't pickle _thread.lock objects
+[2019-02-26 13:42:46,025: WARNING/MainProcess] /home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/celery/fixups/django.py:200: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+
