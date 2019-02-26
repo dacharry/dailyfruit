@@ -17,4 +17,20 @@ sudo apt-get install mysql-server
 sudo apt-get install mysql-client
 sudo apt-get install libmysqlclient-dev
 ### redis
-查看https://blog.csdn.net/da953824/article/details/87947987
+Ubuntu上直接sudo apt-get install redis-server
+ps -aux|grep redis
+让redis服务器可远程登陆，修改redis配置文件，sudo vim /etc/redis/redis.conf
+将bind 127.0.0.1注释掉
+重启redis服务
+sudo /etc/init.d/redis-server restart
+## 测试
+在manage.py所在目录下
+输入python manage.py runserver 
+如果看到下面信息，表示正确
+February 26, 2019 - 14:14:52
+Django version 1.8.2, using settings 'dailyfruit.settings'
+Starting development server at http://127.0.0.1:8085/
+Quit the server with CONTROL-C
+
+最终效果请点击http://www.laizhida.cn
+如果有任何问题，请私信我
