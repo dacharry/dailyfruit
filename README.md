@@ -33,7 +33,8 @@ Starting development server at http://127.0.0.1:8085/
 Quit the server with CONTROL-C
 ## fastdfs与nginx安装
 pass
-## 服务器部署
+## 
+## 服务器部署--uwsgi与nginx
 pass<br>
 <br>
 最终效果请点击http://www.laizhida.cn
