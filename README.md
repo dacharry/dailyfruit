@@ -32,7 +32,7 @@ February 26, 2019 - 14:14:52
 Django version 1.8.2, using settings 'dailyfruit.settings'
 Starting development server at http://127.0.0.1:8085/
 Quit the server with CONTROL-C
-在浏览器上输入123.0.0.1:8085/index 你就会看到主页<br>
+在浏览器上输入123.0.0.1:8085/index 你就会看到主页。<br>
 选择注册跳转到注册页面，填入相关信息，去邮箱检查有没激活邮件，点击账号激活，跳转登录页面，输入账号密码就能登录了
 ## fastdfs与nginx安装
 pass
