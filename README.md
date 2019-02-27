@@ -22,7 +22,8 @@ ps -aux|grep redis
 让redis服务器可远程登陆，修改redis配置文件，sudo vim /etc/redis/redis.conf
 将bind 127.0.0.1注释掉
 重启redis服务
-sudo /etc/init.d/redis-server restart
+sudo /etc/init.d/redis-server restart<br>
+服务器内存小的情况， 可以通过设置配置文件的maxmemory参数设置最大占用内存大小,默认是不设的，然后设置maxmemory-policy删除策略为 allkeys-lru最近最少使用的删除，以避免redis内存不足导致网站报错。
 ## 测试
 在manage.py所在目录下
 输入python manage.py runserver 
