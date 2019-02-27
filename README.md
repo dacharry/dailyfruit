@@ -26,12 +26,14 @@ sudo /etc/init.d/redis-server restart<br>
 服务器内存小的情况， 可以通过设置配置文件的maxmemory参数设置最大占用内存大小,默认是不设的，然后设置maxmemory-policy删除策略为 allkeys-lru最近最少使用的删除，以避免redis内存不足导致网站报错。
 ## 测试
 在manage.py所在目录下
-输入python manage.py runserver 
+输入python manage.py runserver 8085
 如果看到下面信息，表示正确
 February 26, 2019 - 14:14:52
 Django version 1.8.2, using settings 'dailyfruit.settings'
 Starting development server at http://127.0.0.1:8085/
 Quit the server with CONTROL-C
+在浏览器上输入123.0.0.1:8085/index 你就会看到主页<br>
+选择注册跳转到注册页面，填入相关信息，去邮箱检查有没激活邮件，点击账号激活，跳转登录页面，输入账号密码就能登录了
 ## fastdfs与nginx安装
 pass
 ## 
