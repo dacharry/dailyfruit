@@ -9,6 +9,7 @@ python3.6 、 Django1.8.2<br>
 安装相应python包
 pip install -r req.txt
 如果自己安装python包，版本请一致，因为有些PY包会导致django版本的变动
+然后将项目目录中的ChineseAnalyzer.py和whoosh_cn_backend.py复制到/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/haystack/backends，<br>前面/home/python/是家目录，.virtualenvs包含所有你创建的虚拟环境，然后一直往下就是你安装haystack的目录，<br>你需要加这两个文件，才能支持中文分词搜素，runserver时才不会出现没有whoosh_cn_backend.py的错误
 ## 数据库安装
 ### mysql
 安装服务端
