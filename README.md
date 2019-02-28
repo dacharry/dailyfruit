@@ -37,7 +37,7 @@ Quit the server with CONTROL-C
 在浏览器上输入123.0.0.1:8085/index 你就会看到主页。<br>
 选择注册跳转到注册页面，填入相关信息，去邮箱检查有没激活邮件，点击账号激活，跳转登录页面，输入账号密码就能登录了
 ## fastdfs与nginx安装
-pass
+参考这个博客https://blog.csdn.net/MissEel/article/details/80856194
 ## 
 ## 服务器部署--uwsgi与nginx
 uwsgi.ini和uwsgi2.ini文件,一般改三个socket=127.0.0.1:8000,第二uwsgi的端口要跟第一个不一样。用于与nginx进程间通信；<br>目录chdir=/home/python/你的项目，一般我会放在家目录下，<br>设置虚拟环境的路径virtualenv=/home/python/.virtualenvs/bjll_py3
