@@ -56,18 +56,42 @@
 				</form>
                
 			</div>
-			<div class="errmsg" style="display: none"> {{ errmsg }}</div>
-		</div>
+		
+	</div>
 
 	</div>
+	<div class="popup_con">
+		<div class="popup">
+			<p>{{ errmsg }}</p>
+		</div>
+		<div class="mask"></div>
+		</div>
 {% endblock body %}
 
 {% block bottomfiles %}
 	<script type="text/javascript" src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
 	<script type="text/javascript">
-		errmsg = $('.errmsg').text()
-		if(errmsg != ' '){
-			alert(errmsg)	
-		}
+		errmsg = $('.popup p').text()
+		if(errmsg != '注册成功' && errmsg != ''){
+									// alert(errmsg)
+						console.log(errmsg)
+						$('.popup p').text(errmsg)
+						$('.popup_con').fadeIn('fast', function() {
+			          setTimeout(function(){
+			              $('.popup_con').fadeOut('fast',function(){
+			                  // window.location.href = '/user/login';
+			              });
+			          },2000)
+			      });
+					}else　if(errmsg === '注册成功'){
+						$('.popup p').text(errmsg)
+						$('.popup_con').fadeIn('fast', function() {
+			          setTimeout(function(){
+			              $('.popup_con').fadeOut('fast',function(){
+			                  window.location.href = '/user/login';
+			              });
+			          },1000)
+						});
+			}
 	</script>
 {% endblock bottomfiles %}
