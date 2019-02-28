@@ -40,7 +40,8 @@ Quit the server with CONTROL-C
 pass
 ## 
 ## 服务器部署--uwsgi与nginx
-pass<br>
+uwsgi.ini文件,一般改三个socket=127.0.0.1,用于与nginx进程间通信；目录chdir=/home/python/你的项目，一般我会放在家目录下，设置虚拟环境的路径
+virtualenv=/home/python/.virtualenvs/bjll_py3
 <br>
 最终效果请点击http://www.laizhida.cn
 如果有任何问题，请私信我
