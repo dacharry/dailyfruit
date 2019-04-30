@@ -12,11 +12,12 @@ pip install -r req.txt
 然后将项目目录中的ChineseAnalyzer.py和whoosh_cn_backend.py复制到/home/python/.virtualenvs/bjll_py3/lib/python3.5/site-packages/haystack/backends，<br>前面/home/python/是家目录，.virtualenvs包含所有你创建的虚拟环境，然后一直往下就是你安装haystack的目录，<br>你需要加这两个文件，才能支持中文分词搜素，runserver时才不会出现没有whoosh_cn_backend.py的错误
 ## 数据库安装
 ### mysql
-安装服务端
-sudo apt-get install mysql-server
-安装客户端
-sudo apt-get install mysql-client
-sudo apt-get install libmysqlclient-dev
+安装服务端 <br>
+sudo apt-get install mysql-server <br>
+安装客户端 <br>
+sudo apt-get install mysql-client <br>
+安装libmysqlclient，这个在使用开发工具连接数据库使用会用到 <br>
+sudo apt-get install libmysqlclient-dev<br>
 ### redis
 Ubuntu上直接sudo apt-get install redis-server
 ps -aux|grep redis
